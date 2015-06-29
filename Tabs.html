@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="myTunesComposition.css" />
+<script>
+function load(){ //opens new tab, starts off flipRecord()
+openWin();
+setInterval(function () {flipRecord()},5000); //5000 milliseconds
+}
+</script>
+</head>
+<body onload="load()">
+
+<script>
+function flipRecord() { //closes the tab, opens another one
+    closeWin(); 
+    openWin();
+}
+
+
+
+
+function openWin(){
+    myWindow = window.open();
+}
+
+function closeWin(){ 
+    myWindow.close();
+}
+</script>
+
+Currently playing: Nothing
+
+</body>
+</html>
