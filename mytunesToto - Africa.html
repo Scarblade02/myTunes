@@ -5,7 +5,7 @@
 <script>
 function load(){ //opens youtube, starts off flipRecord()
 openWin();
-setInterval(function () {flipRecord()},252000); //252000 milliseconds
+setInterval(function () {flipRecord()},294000); //294000 milliseconds, time of video plus 20 seconds
 }
 </script>
 </head>
@@ -21,7 +21,7 @@ function flipRecord() { //closes the finished video, opens page again
 
 
 function openWin(){
-    myWindow = window.open("https://www.youtube.com/watch?v=r0bS-YnLf4s");
+    myWindow = window.open("https://www.youtube.com/watch?v=FTQbiNvZqaY");
 }
 
 function closeWin(){ 
@@ -29,68 +29,7 @@ function closeWin(){
 }
 </script>
 
-Currently playing: Crave You - by Flight Facilities feat. Giselle
+Currently playing: Toto - Africa
 
 </body>
 </html>
-
-
-
-
-
-
-
-<!--
-Batch version here:
-Note: Transferring functionality is still in progress.
-Currently batch opens firefox, plays the video, and closes firefox after timeout, then opens the next video on the list (also in Firefox).
-Currently html opens a new tab and refreshes it (closes it then opens again) after timeout, but only has the one song.
-@ECHO off
-title Itunes Beta
-:Made to give me a way to make playlists out of youtube links. I realize you can do that with youtube already.
-
-:songOne
-taskkill /f /IM firefox.exe
-:One
-start https://www.youtube.com/watch?v=14IRDDnEPR4 :99 Red Balloons, lasting 3:48
-set /A Counter=235
-set /A Counter2=1
-goto waiting
-
-:songTwo
-taskkill /f /IM firefox.exe
-:Two
-start https://www.youtube.com/watch?v=r0bS-YnLf4s :Crave You, lasting 3:52
-set /A Counter=235
-set /A Counter2=2
-goto waiting
-
-:songThree
-taskkill /f /IM firefox.exe
-:Three
-start https://www.youtube.com/watch?v=otW9z2ABQu0 :Young and Beautiful, lasting 3:56
-set /A Counter=239
-set /A Counter2=3
-goto waiting
-
-:songFour
-taskkill /f /IM firefox.exe
-:Four
-start https://www.youtube.com/watch?v=uqLGuRX_nLM :Lights, lasting 4:05
-set /A Counter=248
-set /A Counter2=4
-goto waiting
-
-:waiting
-If '%Counter%'=='0' goto checking
-ping -n 2 127.1 >nul
-set /A Counter=(Counter)-1
-goto waiting
-
-:checking
-If '%Counter2%'=='1' goto songTwo
-If '%Counter2%'=='2' goto songThree
-If '%Counter2%'=='3' goto songFour
-goto songOne
-
--->
