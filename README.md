@@ -1,2 +1,2 @@
-# myTunes
-Program for looping that doesn't rely on youtuberepeater
+# cardiovascular
+Does not currently do what I want it to do
