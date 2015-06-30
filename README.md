@@ -1,2 +1,2 @@
 # myTunes
-Program for looping that doesn't rely on youtuberepeater
+This branch is for individual instances of the master branch program, since there's going to be some redundancy.
