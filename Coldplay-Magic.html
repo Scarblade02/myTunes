@@ -5,6 +5,7 @@
 <script>
 function load(){ //opens youtube, starts off flipRecord()
 openWin();
+blurWin();
 setInterval(function () {flipRecord()},5000); //5000 milliseconds, testing
 }                                                                                   
 </script>
@@ -15,13 +16,17 @@ setInterval(function () {flipRecord()},5000); //5000 milliseconds, testing
 function flipRecord() { //closes the finished video, opens page again
     closeWin(); 
     openWin();
+    blurWin();
 }
 
 
 
 
 function openWin(){
-    myWindow = window.open("https://www.youtube.com/watch?v=Qtb11P1FWnc&t=29s")
+    myWindow = window.open("https://www.youtube.com/watch?v=Qtb11P1FWnc&t=29s");
+}
+
+function blurWin(){
     myWindow.blur();
 }
 
