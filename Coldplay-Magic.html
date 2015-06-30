@@ -5,8 +5,8 @@
 <script>
 function load(){ //opens youtube, starts off flipRecord()
 openWin();
-setInterval(function () {flipRecord()},252000); //252000 milliseconds, time of video plus 20 seconds
-}
+setInterval(function () {flipRecord()},306000); //306000 milliseconds, time of video plus 20 seconds,
+}                                                                                   //,minus 29 seconds since we skip in
 </script>
 </head>
 <body onload="load()">
@@ -21,7 +21,7 @@ function flipRecord() { //closes the finished video, opens page again
 
 
 function openWin(){
-    myWindow = window.open("https://www.youtube.com/watch?v=r0bS-YnLf4s");
+    myWindow = window.open("https://www.youtube.com/watch?v=Qtb11P1FWnc&t=29s");
 }
 
 function closeWin(){ 
@@ -29,7 +29,7 @@ function closeWin(){
 }
 </script>
 
-Currently playing: Crave You - by Flight Facilities feat. Giselle
+Currently playing: Magic - Coldplay.
 
 </body>
 </html>
