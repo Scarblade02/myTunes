@@ -5,7 +5,6 @@
 <script>
 function load(){ //opens youtube, starts off flipRecord()
 openWin();
-blurWin();
 setInterval(function () {flipRecord()},306000); //306000 milliseconds, time of video plus 20 seconds,
                                                                     //,minus the 29 seconds we skipped
 }                                                                                   
@@ -17,7 +16,6 @@ setInterval(function () {flipRecord()},306000); //306000 milliseconds, time of v
 function flipRecord() { //closes the finished video, opens page again
     closeWin(); 
     openWin();
-    blurWin();
 }
 
 
@@ -25,10 +23,6 @@ function flipRecord() { //closes the finished video, opens page again
 
 function openWin(){
     myWindow = window.open("https://www.youtube.com/watch?v=Qtb11P1FWnc&t=29s", "", "height=100,width=100,left=50000");
-}
-
-function blurWin(){
-    myWindow.blur();
 }
 
 function closeWin(){ 
