@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="myTunesComposition.css" />
+<script>
+function load(){ //opens youtube, starts off flipRecord()
+openWin();
+setInterval(function () {flipRecord()},306000); //306000 milliseconds, time of video plus 20 seconds,
+                                                                    //,minus the 29 seconds we skipped
+}                                                                                   
+</script>
+</head>
+<body onload="load()">
+
+<script>
+function flipRecord() { //closes the finished video, opens page again
+    closeWin(); 
+    openWin();
+}
+
+
+
+
+function openWin(){
+    myWindow = window.open("https://www.youtube.com/watch?v=Qtb11P1FWnc&t=29s", "", "height=100,width=100,left=50000");
+} //goal is to open without interrupting current tab. Right now it still interrupts, but small and way up and right.
+
+function closeWin(){ 
+    myWindow.close();
+}
+</script>
+
+Currently playing: Magic - Coldplay.
+
+</body>
+</html>
