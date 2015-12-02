@@ -5,7 +5,7 @@
 <script>
 function load(){ //opens youtube, starts off flipRecord()
 openWin();
-setInterval(function () {flipRecord()},289000); //289000 milliseconds, time of video plus 20 seconds
+setInterval(function () {flipRecord()},240000); //240000 milliseconds, time of video plus 5 seconds, normally 20
 }                                                                                   
 </script>
 </head>
@@ -21,7 +21,7 @@ function flipRecord() { //closes the finished video, opens page again
 
 
 function openWin(){
-    myWindow = window.open("http://tindeck.com/listen/qzwj", "", "height=100,width=100,left=50000");
+    myWindow = window.open("file:///C:/Users/Felix/Downloads/Defying%20Gravity%20-%20Kerry%20Ellis.mp3", "", "height=100,width=100,left=50000");
 } //goal is to open without interrupting current tab. Right now it still interrupts, but small and way up and right.
 
 function closeWin(){ 
@@ -29,7 +29,7 @@ function closeWin(){
 }
 </script>
 
-Currently playing: MuM - Upward Movement.
+Currently playing: Kerry Ellis - Defying Gravity.
 
 </body>
 </html>
